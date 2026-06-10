@@ -7,12 +7,76 @@
     <title>Quản lý danh sách sản phẩm</title>
   </head>
   <body>
-    <header class="header">
-      <h1>Quản lý danh sách sản phẩm</h1>
-      <p>
-        Giao diện nhập liệu và hiển thị danh sách sản phẩm một cách trực quan,
-        rõ ràng.
-      </p>
-    </header>
+    <div class="container">
+      <header class="header">
+        <h1>Quản lý danh sách sản phẩm</h1>
+        <p>
+          Giao diện nhập liệu và hiển thị danh sách sản phẩm một cách trực quan,
+          rõ ràng.
+        </p>
+      </header>
+
+      <main class="main-layout">
+        <section class="card form-section">
+          <div class="header">
+            <h2>Thêm sản phẩm mới</h2>
+            <p>Nhập đầy đủ thông tin để thêm sản phẩm vào danh sách.</p>
+          </div>
+
+          <form class="product-form" id="product-form">
+            <div class="form-group">
+              <label for="product-name">Tên sản phẩm</label>
+              <input
+                type="text"
+                name="product-name"
+                id="product-name"
+                placeholder="Nhập tên sản phẩm"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="category">Danh mục</label>
+              <select id="category">
+                <option value="">-- Chọn danh mục --</option>
+                <option value="phone">Điện thoại</option>
+                <option value="tablet">Máy tính bảng</option>
+                <option value="accessory">Phụ kiện</option>
+                <option value="laptop">Laptop</option>
+                <option value="headphone">Tai nghe</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="price">Giá</label>
+              <input
+                type="text"
+                name="price"
+                id="price"
+                placeholder="Nhập giá"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="status">Trạng thái còn hàng</label>
+              <select id="status">
+                <option value="in-stock">Còn hàng</option>
+                <option value="out-of-stock">Hết hàng</option>
+              </select>
+            </div>
+
+            <div class="form-actions">
+              <input
+                type="submit"
+                class="btn btn-primary"
+                value="Thêm sản phẩm"
+              />
+              <button type="reset" class="btn btn-secondary">
+                Làm mới form
+              </button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
