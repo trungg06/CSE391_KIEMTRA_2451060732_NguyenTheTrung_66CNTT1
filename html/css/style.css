@@ -205,3 +205,10 @@ th{
 .aheader{
   margin-bottom: 10px;
 }
+
+label.error {
+  color: #ef4444;
+  font-size: 13px;
+  display: block;
+  margin-top: 5px;
+}
